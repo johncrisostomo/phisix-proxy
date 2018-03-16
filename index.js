@@ -13,7 +13,7 @@ app.get('/:stockInfo', async (req, res) => {
     )
     return res.json(data)
   } catch (error) {
-    return res.status(500).end('NOT FOUND')
+    return res.json({})
   }
 })
 
